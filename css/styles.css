@@ -10,9 +10,15 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 100vh;
 }
 
@@ -28,10 +34,14 @@ main {
 }
 
 .content-container {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     justify-items: center;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     grid-gap: 2rem;
     margin: 3rem auto;
 }
@@ -59,6 +69,8 @@ main {
     font-size: 1rem;
     padding: 0.7rem 4rem;
     border-radius: 20px;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease;
     transition: background-color 0.3s ease, color 0.3s ease;
     outline: none;
 }
@@ -70,10 +82,18 @@ main {
 }
 
 .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 1rem;
+       -moz-column-gap: 1rem;
+            column-gap: 1rem;
     margin: 1rem auto;
 }
 
@@ -86,9 +106,17 @@ main {
     padding: 1rem;
     border: 1px solid white;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: border-color 0.3s ease, color 0.3s ease;
+    -o-transition: border-color 0.3s ease, color 0.3s ease;
     transition: border-color 0.3s ease, color 0.3s ease;
 }
 
@@ -134,6 +162,7 @@ main {
     }
 
     .content-container {
+        -ms-grid-columns: 1fr 5% 1fr;
         grid-template-columns: 1fr 1fr;
         gap: 5%;
     }
@@ -144,7 +173,9 @@ main {
     }
 
     .social-icons {
-        justify-content: flex-end;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
     }
 
     .informations {
